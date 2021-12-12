@@ -1,0 +1,34 @@
+<div class="container">
+    <br>
+    <h4><mark>Automobile:</mark> {{name}} <small>{{model}}</small></h4>
+    <div class="alert alert-success">
+        Charset car:
+        <ul>
+            <li>Speed: <strong>{{speed}} </strong>km/h</li>
+            <li>Color car: <strong>{{colors.car}}</strong></li>
+            <li>Color salon: <strong>{{colors.salon}}</strong></li>
+            <li>Color wheels: <strong>{{colors.wheels}}</strong></li>
+        </ul>
+    </div>
+    <h5>Opportunities car</h5>
+    <form (submit)="addOpt(option.value)">
+        <div class="form-group">
+            <label for="option">Add new opportunities</label>
+            <input type="text" id="option" placeholder="add oportunities" class="form-control" #option>
+            <br>
+            <button type="submit" class="btn btn-outline-success">add</button>
+        </div>
+    </form>
+    <br>
+
+    <div class="alert alert-warning">
+        <ul>
+            <li *ngFor="let opt of options">{{opt}} <button class="btn btn-warning btn-sm" (click)="deleteOpt(opt)">x</button></li>
+        </ul>
+    </div>
+    <h5>Select car</h5>
+    <button class="btn btn-danger" (click)="carSelect('bmw')">BMW</button>
+    <button class="btn btn-success" (click)="carSelect('audi')">Audi</button>
+    <button class="btn btn-warning" (click)="carSelect('mercedes')">Mercedes</button>
+</div>
+
