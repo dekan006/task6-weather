@@ -1,5 +1,5 @@
 <div class="cityWeather">{{cityWeather}}</div>
-<button (click)="showCity()" class="btn btn-info">Show City</button>
+<button (click)="getshowCity()" class="btn btn-info">Show City</button>
 <div class="alert alert-warning">
     <ul>
         <li *ngFor="let city of cities; let i = index">{{i+1}} --- {{city}} <button (click)="getWeatherCity(city)" class="btn btn-warning btn-sm">GET</button><span></span> </li>
