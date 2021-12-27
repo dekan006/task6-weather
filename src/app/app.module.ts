@@ -6,13 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarComponent } from './car/car.component';
 import { ApiWeatherComponent } from './api-weather/api-weather.component';
+import { NgSelectComponent } from './ng-select/ng-select.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CarComponent,
-    ApiWeatherComponent
+    ApiWeatherComponent,
+    NgSelectComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
