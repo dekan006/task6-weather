@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgSelectComponent } from './ng-select.component';
+import { PipeDirectiveComponent } from './pipe-directive.component';
 
-describe('NgSelectComponent', () => {
-  let component: NgSelectComponent;
-  let fixture: ComponentFixture<NgSelectComponent>;
+describe('PipeDirectiveComponent', () => {
+  let component: PipeDirectiveComponent;
+  let fixture: ComponentFixture<PipeDirectiveComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgSelectComponent ]
+      declarations: [ PipeDirectiveComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgSelectComponent);
+    fixture = TestBed.createComponent(PipeDirectiveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

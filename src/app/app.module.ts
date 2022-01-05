@@ -1,13 +1,17 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
+import { NgSelectModule } from '@ng-select/ng-select';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { CarComponent } from './car/car.component';
 import { ApiWeatherComponent } from './api-weather/api-weather.component';
-import { NgSelectComponent } from './ng-select/ng-select.component';
+
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PipeDirectiveComponent } from './pipe-directive/pipe-directive.component';
+
 
 
 @NgModule({
@@ -15,15 +19,18 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     AppComponent,
     CarComponent,
     ApiWeatherComponent,
-    NgSelectComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    PipeDirectiveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgSelectModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
