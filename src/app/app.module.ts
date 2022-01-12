@@ -8,6 +8,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CarComponent } from './car/car.component';
 import { ApiWeatherComponent } from './api-weather/api-weather.component';
+import { BehaviorComponent } from './behavior/behavior.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PipeDirectiveComponent } from './pipe-directive/pipe-directive.component';

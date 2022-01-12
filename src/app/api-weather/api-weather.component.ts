@@ -21,7 +21,7 @@ export class ApiWeatherComponent implements OnInit {
   }
 
    
-  showCity(){
+  getshowCity(){
     
     this.http.get<any>(this.urlApiCityList).subscribe(data => {  
       this.cities = data.data.map((element:any) => element.city);
