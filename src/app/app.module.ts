@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CarComponent } from './car/car.component';
@@ -11,6 +11,10 @@ import { ApiWeatherComponent } from './api-weather/api-weather.component';
 
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PipeDirectiveComponent } from './pipe-directive/pipe-directive.component';
+import { StyleDirective } from './style.directive';
+import { ServisesComponent } from './servises/servises.component';
+import { FormComponent } from './form/form.component';
+
 
 
 
@@ -20,14 +24,18 @@ import { PipeDirectiveComponent } from './pipe-directive/pipe-directive.componen
     CarComponent,
     ApiWeatherComponent,
     PagenotfoundComponent,
-    PipeDirectiveComponent
+    PipeDirectiveComponent,
+    StyleDirective,
+    ServisesComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgSelectModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
