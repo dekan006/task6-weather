@@ -1,0 +1,43 @@
+
+<br>
+
+<div class="country">
+    <h3>Select country</h3>
+    <ng-select 
+        [items]="countryList" 
+        [(ngModel)]="selectedCountry"
+        (change)="getStateList($event)"
+        placeholder="Select country"
+        >
+    </ng-select>
+</div>
+<br>
+<div class="state">
+    <h3>Select state</h3>
+    <ng-select 
+        [items]="stateList" 
+        [(ngModel)]="selectedState"
+        (change)="getCityList($event)"
+        
+        >
+    </ng-select>
+</div>
+<br>
+<div class="city">
+    <h3>Select city</h3>
+    <ng-select 
+        [items]="cityList" 
+        [(ngModel)]="selectedCity"
+        (change)="getWeatherInfo($event)"
+        >
+    </ng-select>
+</div>
+<br>
+<div class="weather">
+    <h3>Weather</h3>
+    <p>{{weatherInfo.city}}</p>
+    <p>{{weatherInfo.temp}} C</p>
+    <p>{{weatherInfo.humidity}} %</p>
+    <p>{{weatherInfo.windSpeed}} m/s</p>
+    <img src="https://airvisual.com/images/{{weatherInfo.icon}}.png" alt="">
+</div>
