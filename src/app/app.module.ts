@@ -16,6 +16,7 @@ import { PipeDirectiveComponent } from './pipe-directive/pipe-directive.componen
 import { StyleDirective } from './style.directive';
 import { ServisesComponent } from './servises/servises.component';
 import { FormComponent } from './form/form.component';
+import { NgSelectComponent } from './ng-select/ng-select.component';
 
 
 
@@ -29,7 +30,8 @@ import { FormComponent } from './form/form.component';
     PipeDirectiveComponent,
     StyleDirective,
     ServisesComponent,
-    FormComponent
+    FormComponent,
+    NgSelectComponent
   ],
   imports: [
     BrowserModule,
