@@ -2,7 +2,7 @@
 <br>
 
 <div class="country">
-    <h3>Select country</h3>
+    <h3>Choose  a country from {{countryList.length}} countries</h3>
     <ng-select 
         [items]="countryList" 
         [(ngModel)]="selectedCountry"
@@ -13,7 +13,7 @@
 </div>
 <br>
 <div class="state">
-    <h3>Select state</h3>
+    <h3>Choose a state from {{stateList.length}} states</h3>
     <ng-select 
         [items]="stateList" 
         [(ngModel)]="selectedState"
@@ -24,7 +24,7 @@
 </div>
 <br>
 <div class="city">
-    <h3>Select city</h3>
+    <h3>Choose a city from {{cityList.length}} cities</h3>
     <ng-select 
         [items]="cityList" 
         [(ngModel)]="selectedCity"
